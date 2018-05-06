@@ -1,0 +1,11 @@
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\bin\Debug\ConsoleApp5.exe.config
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\bin\Debug\ConsoleApp5.exe
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\bin\Debug\ConsoleApp5.pdb
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\bin\Debug\Apache.Ignite.Core.dll
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\bin\Debug\Apache.Ignite.exe
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\bin\Debug\Apache.Ignite.exe.config
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\bin\Debug\Apache.Ignite.Core.xml
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\obj\Debug\ConsoleApp5.csprojResolveAssemblyReference.cache
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\obj\Debug\ConsoleApp5.csproj.CoreCompileInputs.cache
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\obj\Debug\ConsoleApp5.exe
+c:\users\salvi\source\repos\ConsoleApp5\ConsoleApp5\obj\Debug\ConsoleApp5.pdb

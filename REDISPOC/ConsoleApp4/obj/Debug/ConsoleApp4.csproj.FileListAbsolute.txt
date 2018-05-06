@@ -1,0 +1,15 @@
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ServiceStack.Common.dll
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ServiceStack.dll
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ServiceStack.Interfaces.dll
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ServiceStack.OrmLite.dll
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ServiceStack.Redis.dll
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ServiceStack.ServiceInterface.dll
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ServiceStack.Text.dll
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csprojResolveAssemblyReference.cache
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+c:\users\salvi\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
