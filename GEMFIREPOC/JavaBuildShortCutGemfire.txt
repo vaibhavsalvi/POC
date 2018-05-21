@@ -1,0 +1,5 @@
+java -cp "C:/Temp/Pivotal_GemFire_8211_b11_Windows/lib/server-dependencies.jar:C:/Temp/Pivotal_GemFire_8211_b11_Windows/SampleCode/helloworld/classes" helloworld.HelloWorldConsumer
+
+javac -cp ".;C:/Temp/Pivotal_GemFire_8211_b11_Windows/lib/server-dependencies.jar" BenchmarkClient.java
+
+region --name=exampleRegion1 --groups=group1 --type=REPLICATE

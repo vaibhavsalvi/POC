@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ServiceStack;
+using System.Collections;
 using ServiceStack.Redis;
+using StackExchange.Redis;
+using System.Diagnostics;
 
 namespace ConsoleApp4
 {
@@ -12,56 +11,70 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
-            string host = "localhost";
-
-            string key = "IDG";
-
-            // Store data in the cache
-
-            bool success = Save(host, key, "Hello World!");
-
-            // Retrieve data from the cache using the key
-
-            Console.WriteLine("Data retrieved from Redis Cache: " + Get(host, key));
-
-            Console.Read();
+            TestHashTable();
+            TestRedis();
         }
-        private static bool Save(string host, string key, string value)
 
+        private static void TestRedis()
         {
-
-            bool isSuccess = false;
-
-            using (RedisClient redisClient = new RedisClient(host))
-
+            Stopwatch serializationStopWatch;
+            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost");
+            IDatabase db = redis.GetDatabase();
+            string value = "abcdefg";
+            List<string> collection = new List<string>();
+            for (int i = 0; i < 100000; i++)
+            {
+                collection.Add(i.ToString());
+            }
+            serializationStopWatch = new Stopwatch();
+            for (int i = 0; i < 100000; i++)
             {
 
-                if (redisClient.Get<string>(key) == null)
-
-                {
-
-                    isSuccess = redisClient.Set(key, value);
-
-                }
+                serializationStopWatch.Start();
+                db.StringSet(collection[i], value);
+                serializationStopWatch.Stop();
 
             }
-
-            return isSuccess;
-
+            Console.WriteLine(serializationStopWatch.ElapsedMilliseconds);
+            serializationStopWatch = new Stopwatch();
+            serializationStopWatch.Start();
+            string returnValue = db.StringGet(collection[500]);
+            serializationStopWatch.Stop();
+            Console.WriteLine(serializationStopWatch.ElapsedMilliseconds);
+            Console.WriteLine("We got value so test is true" + returnValue); // writes: "abcdefg
+            Console.ReadLine();
         }
 
-        private static string Get(string host, string key)
-
+        private static void TestHashTable()
         {
-
-            using (RedisClient redisClient = new RedisClient(host))
-
+            Stopwatch serializationStopWatch;
+            Hashtable hashTable = new Hashtable();
+            string value = "abcdefg";
+            List<string> collection = new List<string>();
+            for (int i = 0; i < 100000; i++)
+            {
+                collection.Add(i.ToString());
+            }
+            serializationStopWatch = new Stopwatch();
+            for (int i = 0; i < 100000; i++)
             {
 
-                return redisClient.Get<string>(key);
+                serializationStopWatch.Start();
+                hashTable.Add(collection[i], value);
+                serializationStopWatch.Stop();
 
             }
-
+            Console.WriteLine(serializationStopWatch.ElapsedMilliseconds);
+            serializationStopWatch = new Stopwatch();
+            serializationStopWatch.Start();
+            var returnValue = hashTable[collection[500]];
+            serializationStopWatch.Stop();
+            Console.WriteLine(serializationStopWatch.ElapsedMilliseconds);
+            Console.WriteLine("We got value so test is true" + returnValue); // writes: "abcdefg
+            //Console.ReadLine();
+           
         }
+
+        
     }
 }
