@@ -29,3 +29,5 @@ C:\Users\salvi\Documents\GitHub\POC\REDISPOC\ConsoleApp4\obj\Debug\ConsoleApp4.e
 C:\Users\salvi\Documents\GitHub\POC\REDISPOC\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
 C:\Users\salvi\Documents\GitHub\POC\REDISPOC\ConsoleApp4\bin\Debug\StackExchange.Redis.dll
 C:\Users\salvi\Documents\GitHub\POC\REDISPOC\ConsoleApp4\bin\Debug\StackExchange.Redis.xml
+C:\Users\salvi\Documents\GitHub\POC\REDISPOC\ConsoleApp4\bin\Debug\Gemstone.GemFire.Cache.dll
+C:\Users\salvi\Documents\GitHub\POC\REDISPOC\ConsoleApp4\obj\Debug\ConsoleApp4.csprojResolveAssemblyReference.cache
